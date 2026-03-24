@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Report</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header & Logo */
+        header {
+            background-color: #1a237e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        header img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Table Container for card effect */
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+
+        /* Table Head */
+        th {
+            background-color: #3949ab;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* Table Body */
+        td {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for table rows */
+        tbody tr:hover td {
+            background-color: #d1c4e9;
+            color: #1a237e;
+        }
+
+        /* Footer Row for averages */
+        tfoot td {
+            background-color: #c5cae9;
+            font-weight: bold;
+        }
+
+        /* Color-coded Grades */
+        .grade-1 { background-color: #ff8a80; color: #fff; border-radius: 5px; }
+        .grade-2 { background-color: #fff176; border-radius: 5px; }
+        .grade-3 { background-color: #81c784; color: #fff; border-radius: 5px; }
+        .grade-4 { background-color: #64b5f6; color: #fff; border-radius: 5px; }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1a237e;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="College Logo">
+        <h1>Student Grade Report</h1>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Purposive Communication</th>
+                    <th>Exercise-Based Fitness Activities</th>
+                    <th>National Service Training Program 2</th>
+                    <th>Readings in Philippine History</th>
+                    <th>Panitikan ng Pilipinas</th>
+                    <th>Discrete Structures</th>
+                    <th>Web Development</th>
+                    <th>Computer Programming 2</th>
+                    <th>Basic Electronics</th>
+                    <th>Final Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tura Ricardo</td>
+                    <td class="grade-2">2</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-3">3</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-2">2</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-2">2.4</td>
+                </tr>
+                <tr>
+                    <td>Lucion Jayniel</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-2">2.7</td>
+                </tr>
+                <tr>
+                    <td>Luma ErickJames</td>
+                    <td class="grade-2">2</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-3">3</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-2">2</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-2">2.4</td>
+                </tr>
+                <tr>
+                    <td>Labares Jerlito</td>
+                    <td class="grade-3">3</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-3">3</td><td class="grade-2">2</td><td class="grade-3">3</td>
+                    <td class="grade-2">2.7</td>
+                </tr>
+                <tr>
+                    <td>Tamparong Gian Carl</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-2">2</td>
+                    <td class="grade-3">3</td><td class="grade-3">3</td><td class="grade-3">3</td>
+                    <td class="grade-2">2</td><td class="grade-3">3</td><td class="grade-3">3</td>
+                    <td class="grade-2">2.8</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="10">Average Final Grade</td>
+                    <td>2.6</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        &copy; 2026 College of Excellence
+    </footer>
+</body>
+</html>
